@@ -1,0 +1,22 @@
+{ 
+    "returnEmail": "decausem@oswego.edu",
+        "random": false,
+        "problems": [
+        {
+            "type": "MC",
+            "question": "Sample Question",
+            "answer": "c",
+            "choices": {
+                "a": "Choice A",
+                "b": "Choice B",
+                "c": "Choice C",
+                "d": "Choice D"
+            },
+        },
+        {
+            "type": "TF",
+            "question": "True or False?",
+            "answer": "True"
+        }
+    ]
+}
