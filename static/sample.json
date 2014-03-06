@@ -1,9 +1,12 @@
 { 
     "returnEmail": "decausem@oswego.edu",
     "random": false,
+    "defaultValue": 5,
     "problems": [
         {
             "type": "MC",
+            "category": "ISC",
+            "worth
             "question": "Sample Question",
             "answer": "c",
             "choices": {
@@ -15,6 +18,7 @@
         },
         {
             "type": "TF",
+            "category": "CSC",
             "question": "True or False?",
             "answer": "True"
         },
