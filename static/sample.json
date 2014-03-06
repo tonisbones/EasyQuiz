@@ -1,7 +1,7 @@
 { 
     "returnEmail": "decausem@oswego.edu",
-        "random": false,
-        "problems": [
+    "random": false,
+    "problems": [
         {
             "type": "MC",
             "question": "Sample Question",
@@ -17,6 +17,14 @@
             "type": "TF",
             "question": "True or False?",
             "answer": "True"
+        },
+        {
+            "type": "MATCH",
+            "list": {
+                "Object 1": "Choice 1",
+                "Object 2": "Choice 2",
+                "Object 3": "Choice 3"
+            }
         }
     ]
 }
