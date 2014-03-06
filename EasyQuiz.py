@@ -1,6 +1,6 @@
 import json
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
 header = """
@@ -13,24 +13,23 @@ footer = """
     </body>
     </html>
 """
+def readJson(filename):
+    with open(filename, "r") as f:
+        return json.loads(f.read())
+    return None
 @app.route("/")
 def index():
 	return render_template('index.html')
 """
 this will be a page to test out the 
-layuot of a newly created json file
+layout of a newly created json file
 """
+#still not working quite right
 @app.route("/jsontest/<jsonFile>")
 def jsontest(jsonFile):
-    #need to figure out how to access files static to read json
-    """
-    json_file = open(os.path.join(os.path.dirname(__file__),"sample.json"),'r')
-    data = json.load(json_file)
-    pprint(data)
-    json_data.close()
-    """
-    return jsonFile
-    #return " %s <p> Works </p> %s" % header, footer
+    jdict = readJson(os.path.join(os.getcwd(), "static/%s.json" % jsonFile))
+    return "works"
+    #return jdict["returnEmail"]
 @app.route('/user/<username>')
 def show_user_profile(username):
     # show the user profile for that user
