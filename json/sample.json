@@ -5,8 +5,6 @@
     "problems": [
         {
             "type": "MC",
-            "category": "ISC",
-            "worth
             "question": "Sample Question",
             "answer": "c",
             "choices": {
@@ -14,11 +12,10 @@
                 "b": "Choice B",
                 "c": "Choice C",
                 "d": "Choice D"
-            },
+            }
         },
         {
             "type": "TF",
-            "category": "CSC",
             "question": "True or False?",
             "answer": "True"
         },
